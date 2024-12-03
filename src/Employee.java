@@ -10,6 +10,9 @@ public class Employee extends Person {
         this.hoursWorked = hoursWorked;
     }
 
+    public Employee(String alice, int age, String number, String e123, String rideOperator) {
+    }
+
     public String getJobTitle() {
         return jobTitle;
     }

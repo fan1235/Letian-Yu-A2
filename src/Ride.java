@@ -16,6 +16,9 @@ public class Ride implements RideInterface {
     public Ride(String rollerCoaster, Employee operator, int i) {
     }
 
+    public Ride(String rollerCoaster, String thrillRide, Employee emp1) {
+    }
+
     @Override
     public void addVisitorToQueue(Visitor visitor) {
         if (queue.size() < capacity) {
