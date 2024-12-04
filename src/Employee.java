@@ -1,16 +1,27 @@
 public class Employee extends Person {
+
+    private String employeeId;
+
     private String jobTitle;
-    private int hoursWorked;
 
-    public Employee() {}
-
-    public Employee(String name, int age, String id, String jobTitle, int hoursWorked) {
-        super(name, age, id);
-        this.jobTitle = jobTitle;
-        this.hoursWorked = hoursWorked;
+    public Employee() {
+        super();
+        this.employeeId = "Not Assigned";
+        this.jobTitle = "Not Assigned";
     }
 
-    public Employee(String alice, int age, String number, String e123, String rideOperator) {
+    public Employee(String name, int age, String contactNumber, String employeeId, String jobTitle) {
+        super(name, age, contactNumber);
+        this.employeeId = employeeId;
+        this.jobTitle = jobTitle;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public String getJobTitle() {
@@ -20,13 +31,6 @@ public class Employee extends Person {
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
     }
-
-    public int getHoursWorked() {
-        return hoursWorked;
-    }
-
-    public void setHoursWorked(int hoursWorked) {
-        this.hoursWorked = hoursWorked;
-    }
 }
+
 

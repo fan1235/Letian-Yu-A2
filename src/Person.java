@@ -1,14 +1,22 @@
+
 public abstract class Person {
+
     private String name;
+
     private int age;
-    private String id;
 
-    public Person() {}
+    private String contactNumber;
 
-    public Person(String name, int age, String id) {
+    public Person() {
+        this.name = "Unknown";
+        this.age = 0;
+        this.contactNumber = "Not Available";
+    }
+
+    public Person(String name, int age, String contactNumber) {
         this.name = name;
         this.age = age;
-        this.id = id;
+        this.contactNumber = contactNumber;
     }
 
     public String getName() {
@@ -27,11 +35,12 @@ public abstract class Person {
         this.age = age;
     }
 
-    public String getId() {
-        return id;
+    public String getContactNumber() {
+        return contactNumber;
     }
 
-    public void setId(String id) {
-        this.id = id;
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
     }
 }
