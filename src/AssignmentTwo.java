@@ -1,7 +1,16 @@
+import java.util.LinkedList;
+
 public class AssignmentTwo {
 
     public static void main(String[] args) {
-        
+        AssignmentTwo two = new AssignmentTwo();
+        two.partThree();
+        two.partFourA();
+        two.partFourB();
+        two.partFive();
+        two.partSix();
+        two.partSeven();
+
 
     }
 
@@ -85,10 +94,32 @@ public class AssignmentTwo {
         ride1.printRideHistory();
     }
 
-
     public void partSix() {
+        Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
+        Ride ride1 = new Ride("Extreme roller coaster", "Thrilling type", emp1, 3);
+        LinkedList<Visitor> rideHistory = new LinkedList<>();
+        for (int i = 1; i <= 5; i++) {
+            Visitor visitor = new Visitor("tourist " + i, 20 + i, "Ticket" + i, "T" + (1000 + i), "Extreme roller coaster");
+            ride1.getQueue().offer(visitor);
+            rideHistory.add(visitor);
+        }
+        ride1.setRideHistory(rideHistory);
+        System.out.println("Tourists queuing for amusement facilities：");
+        ride1.printQueue();
+        String fileName = "rideHistory.csv";
+        ride1.exportRideHistory(fileName);
+        ride1.printRideHistory();
     }
 
     public void partSeven() {
+        Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
+        Ride ride1 = new Ride("Extreme roller coaster", "Thrilling type", emp1, 3);
+        String fileName = "rideHistory.csv";
+        ride1.importRideHistory(fileName);
+        System.out.println("Number of imported tourists: " + ride1.getRideHistory().size());
+        ride1.printRideHistory();
     }
+
+
+
 }
