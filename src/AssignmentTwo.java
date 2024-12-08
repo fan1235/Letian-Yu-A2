@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 
 public class AssignmentTwo {
-
     public static void main(String[] args) {
         AssignmentTwo two = new AssignmentTwo();
         two.partThree();
@@ -10,13 +9,11 @@ public class AssignmentTwo {
         two.partFive();
         two.partSix();
         two.partSeven();
-
-
     }
 
-
+    // Part 3: Demonstrates adding visitors to a ride queue, removing a visitor, and running one cycle of the ride.
     public void partThree() {
-        System.out.println("----------------------partThree------------------");
+        System.out.println("---------------partThree---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Visitor visitor1 = new Visitor("Bob", 35, "0987654321", "T1001", "Roller Coaster");
         Visitor visitor2 = new Visitor("Charlie", 22, "5678901234", "T1002", "Roller Coaster");
@@ -34,12 +31,11 @@ public class AssignmentTwo {
         ride1.printQueue();
         ride1.runOneCycle();
         ride1.printQueue();
-
     }
 
-
+    // Part 4A: Demonstrates checking if visitors have taken the ride and printing the ride history.
     public void partFourA() {
-        System.out.println("----------------------partFourA------------------");
+        System.out.println("---------------partFourA---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Visitor visitor1 = new Visitor("Bob", 35, "0987654321", "T1001", "Roller Coaster");
         Visitor visitor2 = new Visitor("Charlie", 22, "5678901234", "T1002", "Roller Coaster");
@@ -61,9 +57,9 @@ public class AssignmentTwo {
         ride1.printRideHistory();
     }
 
-
+    // Part 4B: Demonstrates sorting the ride history by ticket number.
     public void partFourB() {
-        System.out.println("----------------------partFourB------------------");
+        System.out.println("---------------partFourB---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Visitor visitor1 = new Visitor("Bob", 35, "0987654321", "T1001", "Roller Coaster");
         Visitor visitor2 = new Visitor("Charlie", 22, "5678901234", "T1002", "Roller Coaster");
@@ -83,9 +79,9 @@ public class AssignmentTwo {
         ride1.printRideHistory();
     }
 
-
+    // Part 5: Demonstrates adding multiple visitors to the queue and running the ride for one cycle.
     public void partFive() {
-        System.out.println("----------------------partFive------------------");
+        System.out.println("---------------partFive---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Ride ride1 = new Ride("Roller Coaster", "Thrill Ride", emp1, 3);
         for (int i = 1; i <= 10; i++) {
@@ -101,9 +97,9 @@ public class AssignmentTwo {
         ride1.printRideHistory();
     }
 
-
+    // Part 6: Demonstrates exporting the ride history to a CSV file.
     public void partSix() {
-        System.out.println("----------------------partSix------------------");
+        System.out.println("---------------partSix---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Ride ride1 = new Ride("Extreme roller coaster", "Thrilling type", emp1, 3);
         LinkedList<Visitor> rideHistory = new LinkedList<>();
@@ -120,9 +116,9 @@ public class AssignmentTwo {
         ride1.printRideHistory();
     }
 
-
+    // Part 7: Demonstrates importing the ride history from a CSV file and printing it.
     public void partSeven() {
-        System.out.println("----------------------partSeven------------------");
+        System.out.println("---------------partSeven---------------");
         Employee emp1 = new Employee("Alice", 28, "1234567890", "E123", "Ride Operator");
         Ride ride1 = new Ride("Extreme roller coaster", "Thrilling type", emp1, 3);
         String fileName = "rideHistory.csv";
@@ -130,7 +126,4 @@ public class AssignmentTwo {
         System.out.println("Number of imported tourists: " + ride1.getRideHistory().size());
         ride1.printRideHistory();
     }
-
-
-
 }

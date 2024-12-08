@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="60d4cf7f-1620-4d98-b669-eaee7883ba91" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/src/AssignmentTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ride.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RideInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RideInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VisitorComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VisitorComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/小fan/oop-A2",
+    "last_opened_file_path": "C:/Users/小fan/Letian Yu-A2/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +55,11 @@
     "应用程序.AssignmentTwo.executor": "Run"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\小fan\Letian Yu-A2\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,6 +81,7 @@
       <workItem from="1733049128443" duration="1245000" />
       <workItem from="1733144155698" duration="1853000" />
       <workItem from="1733241595115" duration="2371000" />
+      <workItem from="1733387529741" duration="5401000" />
     </task>
     <servers />
   </component>
